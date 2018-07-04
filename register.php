@@ -23,7 +23,6 @@
 	<meta charset="utf-8">
 	
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="assets/js/register.js"></script>
@@ -62,11 +61,11 @@
 					<p>
 						<?php echo $account->getError(Constants::$loginFailed) ?>
 						<label for="loginUsername">Korisničko ime</label>
-						<input id="loginUsername" type="text" name="loginUsername" placeholder="vaše korisničko ime" required>
+						<input id="loginUsername" type="text" name="loginUsername" value="<?php getInputValue('loginUsername') ?>" placeholder="vaše korisničko ime" required>
 					</p>
 					<p>
 						<label for="loginPassword">Lozinka</label>
-						<input id="loginPassword" type="password" name="loginPassword" placeholder="vaša lozinka" required>
+						<input id="loginPassword" type="password" name="loginPassword" value="<?php getInputValue('loginPassword') ?>" placeholder="vaša lozinka" required>
 					</p>	
 
 					<button type="submit" name="loginButton">Prijava</button>	
