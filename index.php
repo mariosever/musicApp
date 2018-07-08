@@ -29,7 +29,24 @@ else {
 		<div id="nowPlayingBar">
 			
 			<div id="nowPlayingLeft">
-				
+				<div class="content">
+					<span class="albumLink">
+						<img src="https://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" class="albumArtwork">		
+					</span>
+
+					<div class="trackInfo">
+						
+						<span class="trackName">				
+							<span>Happy Birthday</span>
+						</span>
+
+						<span class="artistName">				
+							<span>My Name</span>
+						</span>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -63,6 +80,18 @@ else {
 							<img src="assets/images/icons/repeat.png" alt="Repeat">
 						</button>
 						
+					</div>
+
+					<div class="playbackBar">
+						
+						<span class="progressTime current">0.00</span>
+						<div class="progressBar">
+							<div class="progressBarBg">
+								<div class="progress"></div>		
+							</div>
+						</div>
+						<span class="progressTime remaining">0.00</span>
+
 					</div>
 
 				</div>
